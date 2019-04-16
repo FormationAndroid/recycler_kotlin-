@@ -8,12 +8,12 @@ import kotlinx.android.synthetic.main.item_employe.view.*
 
 class EmployeAdapter (private val employes: ArrayList<Employe>) : RecyclerView.Adapter<EmployeAdapter.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EmployeAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.item_employe, parent, false)
         return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: EmployeAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItems(employes[position])
     }
 

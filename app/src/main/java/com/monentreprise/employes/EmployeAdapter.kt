@@ -19,9 +19,11 @@ class EmployeAdapter (private val employes: ArrayList<Employe>) : RecyclerView.A
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindItems(employe: Employe) {
-            itemView.textNom.text = employe.nom
-            itemView.textPrenom.text = employe.prenom
-            itemView.textAge.text = employe.age.toString()
+            itemView.apply {
+                textNom.text = employe.nom
+                textPrenom.text = employe.prenom
+                textAge.text = employe.age.toString()
+            }
         }
     }
 

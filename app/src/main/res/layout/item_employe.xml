@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="vertical"
+              android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
 
-    <TextView
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgProfil"
+            tools:src="@drawable/woman1"/>
+
+    <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Willis"
-            android:textSize="30sp"
-            android:id="@+id/textNom"/>
+            android:orientation="vertical">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Bruce"
-            android:textSize="30sp"
-            android:id="@+id/textPrenom"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Willis"
+                android:textSize="30sp"
+                android:id="@+id/textNom"/>
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="60"
-            android:textSize="30sp"
-            android:id="@+id/textAge"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Bruce"
+                android:textSize="30sp"
+                android:id="@+id/textPrenom"/>
 
-    <View android:layout_width="match_parent"
-          android:layout_height="1dp"
-          android:background="#000"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="60"
+                android:textSize="30sp"
+                android:id="@+id/textAge"/>
+
+    </LinearLayout>
 
 </LinearLayout>

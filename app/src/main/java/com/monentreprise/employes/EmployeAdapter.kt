@@ -42,8 +42,6 @@ class EmployeAdapter (private val employes: ArrayList<Employe>) : RecyclerView.A
         }
     }
 
-    override fun getItemCount(): Int {
-        return employes.size
-    }
+    override fun getItemCount() = employes.size
 
 }
